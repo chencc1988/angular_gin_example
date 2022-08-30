@@ -1,0 +1,31 @@
+{
+  "name": "angular_gin_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "release": "standard-version",
+    "release:prerelease": "npm run release -- --release-as patch --prerelease rc",
+    "release:patch": "npm run release -- --release-as patch",
+    "release:minor": "npm run release -- --release-as minor",
+    "release:major": "npm run release -- --release-as major",
+    "version": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "install:frontend": "cd client && npm i",
+    "install:backend": "cd server && go mod tidy",
+    "build:frontend": "cd client && npm run build",
+    "build:backend": "go build example.com/server",
+    "install-build:all": "run-s install:frontend install:backend build:frontend build:backend"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-angular": "^17.0.3",
+    "@commitlint/prompt-cli": "^17.0.3",
+    "conventional-changelog-cli": "^2.2.2",
+    "husky": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "standard-version": "^9.5.0"
+  }
+}

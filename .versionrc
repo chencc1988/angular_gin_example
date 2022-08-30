@@ -1,0 +1,13 @@
+{
+  "types": [
+    {"type":"feat","section":"Features"},
+    {"type":"fix","section":"Bug Fixes"},
+    {"type":"test","section":"Tests"},
+    {"type":"build","section":"Build System"},
+    {"type":"ci","section":"Continuous Integration"},
+    {"type":"docs","section":"Documentation Updates"},
+    {"type":"perf","section":"Performance ImprovSements"},
+    {"type":"refactor","section":"Refactors"},
+    {"type":"style","section":"Style Changes"}
+  ]
+}

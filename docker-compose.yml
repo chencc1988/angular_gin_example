@@ -1,0 +1,22 @@
+version: "2.4"
+services: 
+
+  angular-go:
+    container_name: angular-go
+    build: ./
+    image: angular-go:2.0.0
+    networks:
+      - angular-go-default-net
+    ports:
+      - 8888:8888/tcp
+    restart: always
+    mem_limit: 1024m
+
+networks:
+  angular-go-default-net:
+    name: angular-go-default-net
+
+volumes:
+  angular-go-default-volume:
+    name: ngular-go-default-volume
+
