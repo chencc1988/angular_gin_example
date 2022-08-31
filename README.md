@@ -6,6 +6,7 @@ The project only provides basic development infrastructures. Both Angular and Gi
 2. Standard version change log 
 3. Dockerization
 
+```diagram
 -- Caddy -- https://localhost:8888
 |
 |
@@ -13,16 +14,16 @@ The project only provides basic development infrastructures. Both Angular and Gi
 |
 |
 -- Angular
+```
+## Start on Docker
+- Step1: Run `docker-compose up -d --build` in the project root folder.
+- Step2: Open the Angular page via https://localhost:8888.
 
-## Run it in Docker
-Step1: Run `docker-compose up -d --build` in the project root folder.
-Step2: Open the Angular page via https://localhost:8888.
 
-
-## Run it in local machine
-Step1: Run `npm install` in the project root folder.
-Step2: Run `npm run install-build:all`.
-Step3: Open the Angular page via http://localhost:8080.
+## Start on local machine
+- Step1: Run `npm install` in the project root folder.
+- Step2: Run `npm run install-build:all`.
+- Step3: Open the Angular page via http://localhost:8080.
 
 ## Note
 1. Before developping and commiting code, you should run `npm install` in the project root folder. 
