@@ -1,4 +1,4 @@
-# A quick start of serving empty Angular project in Gin-Gonic 
+# A quick start of serving an empty Angular project in Gin-Gonic 
 
 
 The project only provides basic development infrastructures. Both Angular and Gin are pure for developer to add their own code. The infrastructures of this project include
