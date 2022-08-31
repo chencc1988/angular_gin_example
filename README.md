@@ -26,4 +26,4 @@ The project only provides basic development infrastructures. Both Angular and Gi
 - Step3: Open the Angular page via http://localhost:8080.
 
 ## Note
-1. Before developping and commiting code, you should run `npm install` in the project root folder. 
+1. Before developing and commit code at the first time, you should run `npm install` in the project root folder. 
